@@ -2,7 +2,7 @@
 import image from './assets/image.png'
 
  export const model = [
-    {type: 'title' , value: 'Hello world from JS', options:{
+    {type: 'title' , value: 'Hello world from JS', options: {
         tag:'h2'
     }},
     {type: 'text' , value: 'here text'},

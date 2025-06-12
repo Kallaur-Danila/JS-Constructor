@@ -3,7 +3,4 @@ node_modules
 dist/
 .idea
 
-package-lock.json
-package.json
-assets/
 .cache/

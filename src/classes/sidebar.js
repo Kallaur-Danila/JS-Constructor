@@ -1,12 +1,11 @@
-import { options } from 'cssesc'
+import {TextBlock, TitleBlock} from './blocks'
 import {block} from '../utils'
 
 export class Sidebar{
     constructor(selector, updateCallback){
     this.$el = document.querySelector(selector) 
-
-
     this.update = updateCallback
+
     this.init()
     }
 
@@ -26,13 +25,13 @@ export class Sidebar{
     add(event) {
     event.preventDefault()
 
-    const type = event.target
+    const type = event.target.name
     const value = event.target.value.value
     const styles = event.target.styles.value
-
+  
     const newBlock = type === 'text' 
-        ? new textBlock(value, {styles}) 
-        : new titleBlock(value, {styles})
+        ? new TextBlock(value, {styles}) 
+        : new TitleBlock(value, {styles})
 
         this.update(newBlock)
 

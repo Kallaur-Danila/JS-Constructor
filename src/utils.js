@@ -1,4 +1,3 @@
-import { object } from "webidl-conversions"
 
 export function row(content, styles = '') {
   return `<div class="row" style = "${styles}">${content}</div>`
